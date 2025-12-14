@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <style>
+      input{
+        border-radius: 5px;
+      }
+      #addBtn
+      {
+        border-radius: 5px;
+      }
+    </style>
+</head>
+<body bgcolor="pink">
+    <center>
+    <h2>Gestion du Panier</h2>
+<div>
+  <input type="text" id="productName" placeholder="Nom du produit">
+  <input type="number" id="quantity" min="1" placeholder="Quantité">
+  <button id="addBtn">Ajouter au panier</button>
+ <p id="empty" class="empty">Le panier est vide</p>
+
+  <ul id="cart"></ul>
+  <p>Total des articles : <strong><span id="total">0</span></strong></p>
+  </center>
+    <script src="Panier.js"></script>
+</body>
+</html>
